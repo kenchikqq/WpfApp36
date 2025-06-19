@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp36.AddToDoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Новое дело" Height="400" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Background="#FFF5E6D3">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Новое дело" Style="{StaticResource HeaderStyle}" Grid.Row="0" Margin="0,0,0,20"/>
+        <TextBlock Text="Название:" Grid.Row="1" Margin="0,0,0,5"/>
+        <TextBox x:Name="titleBox" Grid.Row="2" Margin="0,0,0,10"/>
+        <TextBlock Text="Выполнить до:" Grid.Row="3" Margin="0,0,0,5"/>
+        <DatePicker x:Name="datePicker" Grid.Row="4" Margin="0,0,0,10"/>
+        <TextBlock Text="Описание:" Grid.Row="5" Margin="0,0,0,5"/>
+        <TextBox x:Name="descBox" Grid.Row="6" Margin="0,0,0,0" Height="80" VerticalContentAlignment="Top" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" BorderThickness="1.5"/>
+        <Button Grid.Row="7" Content="Добавить дело" Height="32" Width="200" HorizontalAlignment="Center" Margin="0,16,0,20" Click="Save_Click"/>
+    </Grid>
+</Window>
