@@ -205,7 +205,7 @@ namespace WpfApp36.ViewModels
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка при сохранении: ", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                 MessageBox.Show($"Ошибка при сохранении: ", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

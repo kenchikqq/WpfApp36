@@ -83,7 +83,7 @@
                     <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
                     <Style.Triggers>
                         <Trigger Property="IsSelected" Value="True">
-                            <Setter Property="Background" Value="#BFE3E6D3"/>
+                             <Setter Property="Background" Value="#BFE3E6D3"/>
                             <Setter Property="FontWeight" Value="Bold"/>
                         </Trigger>
                     </Style.Triggers>

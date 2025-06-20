@@ -14,7 +14,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Новое дело" Style="{StaticResource HeaderStyle}" Grid.Row="0" Margin="0,0,0,20"/>
+        <TextBlock Text="Новое дело" Style="{StaticResource HeaderStyle}" Grid.Row="0" Margin="0, 0,0,20"/>
         <TextBlock Text="Название:" Grid.Row="1" Margin="0,0,0,5"/>
         <TextBox x:Name="titleBox" Grid.Row="2" Margin="0,0,0,10"/>
         <TextBlock Text="Выполнить до:" Grid.Row="3" Margin="0,0,0,5"/>

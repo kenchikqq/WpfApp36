@@ -29,7 +29,7 @@ namespace WpfApp36
             }
             if (!ToDoDate.HasValue)
             {
-                MessageBox.Show("Выберите дату выполнения", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                 MessageBox.Show("Выберите дату выполнения", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
             DialogResult = true;

@@ -6,7 +6,7 @@ namespace WpfApp36
     {
         public MainWindow()
         {
-            InitializeComponent();
+             InitializeComponent();
         }
     }
 }
