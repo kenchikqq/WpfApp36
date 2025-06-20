@@ -24,12 +24,12 @@ namespace WpfApp36
         {
             if (string.IsNullOrWhiteSpace(ToDoTitle))
             {
-                MessageBox.Show("Введите название дела!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Введите название дела", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
             if (!ToDoDate.HasValue)
             {
-                MessageBox.Show("Выберите дату выполнения!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Выберите дату выполнения", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
             DialogResult = true;

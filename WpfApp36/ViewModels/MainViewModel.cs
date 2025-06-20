@@ -11,6 +11,7 @@ using Microsoft.Win32;
 using WpfApp36.Models;
 using WpfApp36.Infrastructure;
 
+
 namespace WpfApp36.ViewModels
 {
    
@@ -108,7 +109,7 @@ namespace WpfApp36.ViewModels
                 {
                     Title = addWindow.ToDoTitle,
                     DueDate = addWindow.ToDoDate ?? DateTime.Now,
-                    Description = string.IsNullOrWhiteSpace(addWindow.ToDoDescription) ? "Нет описания" : addWindow.ToDoDescription,
+                    Description = string.IsNullOrWhiteSpace(addWindow.ToDoDescription) ? "Нетописания" : addWindow.ToDoDescription,
                     Doing = false
                 };
                 newToDo.PropertyChanged += ToDoItem_PropertyChanged;
@@ -121,7 +122,7 @@ namespace WpfApp36.ViewModels
             var dialog = new SaveFileDialog
             {
                 Filter = "JSON файлы (*.json)|*.json",
-                DefaultExt = "json",
+                DefaultExt = " json",
                 FileName = "todolist.json",
                 Title = "Сохранить список дел"
             };
@@ -129,7 +130,7 @@ namespace WpfApp36.ViewModels
             if (dialog.ShowDialog() == true)
             {
                 WriteToJsonFile(dialog.FileName, ToDoList);
-                MessageBox.Show($"Список дел успешно сохранён в {dialog.FileName}!", "Сохранение", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show($"Список дел успешно сохранён в ", "Сохранение", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
 
@@ -204,7 +205,7 @@ namespace WpfApp36.ViewModels
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка при сохранении: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Ошибка при сохранении: ", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
