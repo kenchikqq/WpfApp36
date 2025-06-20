@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Windows.Data;
 
-namespace WpfApp36
+namespace WpfApp36.Infrastructure
 {
     public class OverdueConverter : IValueConverter
     {
